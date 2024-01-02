@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(74, 34, 95),rgba(61, 73, 88, 0.993),rgba(10, 5, 0, 0.966));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vh;
+  width: 35%;
+  height: auto;
+  background-color: rgb(226, 220, 220);
+  box-shadow: 5px 5px 5px solid black;
+  border-radius: 15px;
+  padding: 20px;
+}
+.cards-header {
+  width: 30vw;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards img {
+  height: 40px;
+}
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  gap: 30px;
+}
+.item {
+  width: 30vw;
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.add input {
+  width: 20vw;
+  height: 6vh;
+  border-radius: 20px;
+  padding: 15px;
+  outline: none;
+  border: 1.7px solid white;
+  transition: all .4s ease;
+}
+.add input:focus {
+  border-color: aqua;
+}
+.btn {
+  width: 6vw;
+  height: 25px;
+  height: 6vh;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.89);
+  color:  rgb(52, 82, 53);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: rgb(52, 82, 53);
+  color: white;
+  transition: all 0.3s ease;
+}
+.Check-box {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: tranform 0.3s ease, opacity 0.3s ease;
+  animation-name: line;
+  animation-direction: reverse;
+}
+.Check-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.custom-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(2, 116, 2);
+  box-shadow: 5px 5px 10px solid rgb(255, 0, 0);
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: rgb(52, 82, 53);
+  cursor: pointer;
+}
+.Lists i {
+  color:  rgb(52, 82, 53);
+  cursor: pointer;
+}
+.Lists span{
+  cursor: pointer;
+}
+.Lists {
+  width: 25vw;
+  height: 4vh;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-checkbox:checked {
+  background-image: url('Assests/checked.png');
+  background-size: cover;
+}
+
